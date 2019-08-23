@@ -1,9 +1,10 @@
 import base64
 
-message = input("What's the message? ")
+fun_type = input("Encode or Decode? ")
 
 def encode():
     while True:
+        message = input("What's the message? ")
         data = base64.b64encode(message.encode())
         if len(message) > 0:
             print(data)
@@ -22,6 +23,8 @@ def decode():
         else:
             print("error")
             break
-
-encode()
-decode()
+            
+if fun_type.lower() == 'encode':
+    encode()
+else:
+    decode()
