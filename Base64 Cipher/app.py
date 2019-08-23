@@ -1,6 +1,6 @@
 import base64
 
-fun_type = input("Encode or Decode? ")
+encode_decode = input("Encode or Decode? ")
 
 def encode():
     while True:
@@ -24,7 +24,7 @@ def decode():
             print("error")
             break
             
-if fun_type.lower() == 'encode':
+if encode_decode.lower() == 'encode':
     encode()
 else:
     decode()
